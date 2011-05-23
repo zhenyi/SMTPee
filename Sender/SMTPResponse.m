@@ -54,12 +54,17 @@
     if ([[self.string substringWithRange:NSMakeRange(3, 1)] isEqualToString:@"-"]) {
         NSArray *lines = [self stringToArrayOfLines:self.string];
         for (int i = 1; i < [lines count]; i++) {
-            NSString *str = [[lines objectAtIndex:i] substringFromIndex:4];
-            str = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-            NSArray *keyAndValues = [str componentsSeparatedByString:@" "];
-            NSString *key = [keyAndValues objectAtIndex:0];
-            NSArray *values = [keyAndValues subarrayWithRange:NSMakeRange(1, [keyAndValues count] - 1)];
-            [cap setObject:values forKey:key];
+            if ([[lines objectAtIndex:i] length] > 0) {
+                NSString *str = [[lines objectAtIndex:i] substringFromIndex:4];
+                str = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+                NSArray *keyAndValues = [str componentsSeparatedByString:@" "];
+                NSString *key = [keyAndValues objectAtIndex:0];
+                NSArray *values = [NSArray array];
+                if ([keyAndValues count] > 1) {
+                    values = [keyAndValues subarrayWithRange:NSMakeRange(1, [keyAndValues count] - 1)];
+                }
+                [cap setObject:values forKey:key];
+            }
         }
     }
     return cap;
