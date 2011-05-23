@@ -15,7 +15,7 @@ static char base64EncodingTable[64] = {
     'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/'
 };
 
-@implementation NSString (Base64)
+@implementation NSString (EncodeDecode)
 
 + (NSString *) base64StringFromString:(NSString *)string {
     NSData * data = [string dataUsingEncoding:NSUTF8StringEncoding];
@@ -125,6 +125,28 @@ static char base64EncodingTable[64] = {
         }
     }
     return [[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding];
+}
+
+- (NSString *) MD5Digest {
+    const char *str = [self UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(str, strlen(str), result);
+    NSMutableString *ret = [NSMutableString stringWithCapacity:(CC_MD5_DIGEST_LENGTH * 2)];
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [ret appendFormat:@"%c", result[i]];
+    }
+    return ret;
+}
+
+- (NSString *) MD5HexDigest {
+    const char *str = [self UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(str, strlen(str), result);
+    NSMutableString *ret = [NSMutableString stringWithCapacity:(CC_MD5_DIGEST_LENGTH * 2)];
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [ret appendFormat:@"%02x", result[i]];
+    }
+    return ret;
 }
 
 @end

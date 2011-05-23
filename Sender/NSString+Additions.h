@@ -6,9 +6,14 @@
 //  Copyright 2011 And a Dinosaur. All rights reserved.
 //
 
-@interface NSString (Base64)
+#import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonDigest.h>
+
+@interface NSString (EncodeDecode)
 
 + (NSString *) base64StringFromString:(NSString *)string;
 + (NSString *) stringFromBase64String:(NSString *)string;
+- (NSString *) MD5Digest;
+- (NSString *) MD5HexDigest;
 
 @end
