@@ -14,6 +14,8 @@
 		FE246E87138A495E00C6E565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E86138A495E00C6E565 /* main.m */; };
 		FE246E8A138A495E00C6E565 /* SenderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E89138A495E00C6E565 /* SenderAppDelegate.m */; };
 		FE246E8D138A495E00C6E565 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE246E8B138A495E00C6E565 /* MainWindow.xib */; };
+		FE246E95138A497700C6E565 /* SMTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E94138A497700C6E565 /* SMTPResponse.m */; };
+		FE4CB6C7138A4CDE0012ACD2 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4CB6C6138A4CDE0012ACD2 /* NSString+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +23,17 @@
 		FE246E79138A495E00C6E565 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE246E7B138A495E00C6E565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE246E7D138A495E00C6E565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FE246E81138A495E00C6E565 /* Sender-Info.plist */ = {isa = PBXFileReference; path = "Sender-Info.plist"; sourceTree = "<group>"; };
+		FE246E81138A495E00C6E565 /* Sender-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sender-Info.plist"; sourceTree = "<group>"; };
 		FE246E83138A495E00C6E565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FE246E85138A495E00C6E565 /* Sender-Prefix.pch */ = {isa = PBXFileReference; path = "Sender-Prefix.pch"; sourceTree = "<group>"; };
+		FE246E85138A495E00C6E565 /* Sender-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sender-Prefix.pch"; sourceTree = "<group>"; };
 		FE246E86138A495E00C6E565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FE246E88138A495E00C6E565 /* SenderAppDelegate.h */ = {isa = PBXFileReference; path = SenderAppDelegate.h; sourceTree = "<group>"; };
+		FE246E88138A495E00C6E565 /* SenderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SenderAppDelegate.h; sourceTree = "<group>"; };
 		FE246E89138A495E00C6E565 /* SenderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SenderAppDelegate.m; sourceTree = "<group>"; };
 		FE246E8C138A495E00C6E565 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		FE246E93138A497700C6E565 /* SMTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPResponse.h; sourceTree = "<group>"; };
+		FE246E94138A497700C6E565 /* SMTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPResponse.m; sourceTree = "<group>"; };
+		FE4CB6C5138A4CDE0012ACD2 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		FE4CB6C6138A4CDE0012ACD2 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				FE246E88138A495E00C6E565 /* SenderAppDelegate.h */,
 				FE246E89138A495E00C6E565 /* SenderAppDelegate.m */,
 				FE246E8B138A495E00C6E565 /* MainWindow.xib */,
+				FE246E93138A497700C6E565 /* SMTPResponse.h */,
+				FE246E94138A497700C6E565 /* SMTPResponse.m */,
+				FE4CB6C9138A4CE60012ACD2 /* Additions */,
 				FE246E80138A495E00C6E565 /* Supporting Files */,
 			);
 			path = Sender;
@@ -91,6 +100,15 @@
 				FE246E86138A495E00C6E565 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE4CB6C9138A4CE60012ACD2 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				FE4CB6C5138A4CDE0012ACD2 /* NSString+Additions.h */,
+				FE4CB6C6138A4CDE0012ACD2 /* NSString+Additions.m */,
+			);
+			name = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +175,8 @@
 			files = (
 				FE246E87138A495E00C6E565 /* main.m in Sources */,
 				FE246E8A138A495E00C6E565 /* SenderAppDelegate.m in Sources */,
+				FE246E95138A497700C6E565 /* SMTPResponse.m in Sources */,
+				FE4CB6C7138A4CDE0012ACD2 /* NSString+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +281,7 @@
 				FE246E92138A495E00C6E565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
