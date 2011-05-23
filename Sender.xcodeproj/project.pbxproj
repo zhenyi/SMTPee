@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE246E7A138A495E00C6E565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE246E79138A495E00C6E565 /* UIKit.framework */; };
+		FE246E7C138A495E00C6E565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE246E7B138A495E00C6E565 /* Foundation.framework */; };
+		FE246E7E138A495E00C6E565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE246E7D138A495E00C6E565 /* CoreGraphics.framework */; };
+		FE246E84138A495E00C6E565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE246E82138A495E00C6E565 /* InfoPlist.strings */; };
+		FE246E87138A495E00C6E565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E86138A495E00C6E565 /* main.m */; };
+		FE246E8A138A495E00C6E565 /* SenderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E89138A495E00C6E565 /* SenderAppDelegate.m */; };
+		FE246E8D138A495E00C6E565 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE246E8B138A495E00C6E565 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE246E75138A495E00C6E565 /* Sender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE246E79138A495E00C6E565 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE246E7B138A495E00C6E565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE246E7D138A495E00C6E565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE246E81138A495E00C6E565 /* Sender-Info.plist */ = {isa = PBXFileReference; path = "Sender-Info.plist"; sourceTree = "<group>"; };
+		FE246E83138A495E00C6E565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE246E85138A495E00C6E565 /* Sender-Prefix.pch */ = {isa = PBXFileReference; path = "Sender-Prefix.pch"; sourceTree = "<group>"; };
+		FE246E86138A495E00C6E565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE246E88138A495E00C6E565 /* SenderAppDelegate.h */ = {isa = PBXFileReference; path = SenderAppDelegate.h; sourceTree = "<group>"; };
+		FE246E89138A495E00C6E565 /* SenderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SenderAppDelegate.m; sourceTree = "<group>"; };
+		FE246E8C138A495E00C6E565 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE246E72138A495E00C6E565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE246E7A138A495E00C6E565 /* UIKit.framework in Frameworks */,
+				FE246E7C138A495E00C6E565 /* Foundation.framework in Frameworks */,
+				FE246E7E138A495E00C6E565 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE246E6A138A495E00C6E565 = {
+			isa = PBXGroup;
+			children = (
+				FE246E7F138A495E00C6E565 /* Sender */,
+				FE246E78138A495E00C6E565 /* Frameworks */,
+				FE246E76138A495E00C6E565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE246E76138A495E00C6E565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE246E75138A495E00C6E565 /* Sender.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE246E78138A495E00C6E565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE246E79138A495E00C6E565 /* UIKit.framework */,
+				FE246E7B138A495E00C6E565 /* Foundation.framework */,
+				FE246E7D138A495E00C6E565 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE246E7F138A495E00C6E565 /* Sender */ = {
+			isa = PBXGroup;
+			children = (
+				FE246E88138A495E00C6E565 /* SenderAppDelegate.h */,
+				FE246E89138A495E00C6E565 /* SenderAppDelegate.m */,
+				FE246E8B138A495E00C6E565 /* MainWindow.xib */,
+				FE246E80138A495E00C6E565 /* Supporting Files */,
+			);
+			path = Sender;
+			sourceTree = "<group>";
+		};
+		FE246E80138A495E00C6E565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE246E81138A495E00C6E565 /* Sender-Info.plist */,
+				FE246E82138A495E00C6E565 /* InfoPlist.strings */,
+				FE246E85138A495E00C6E565 /* Sender-Prefix.pch */,
+				FE246E86138A495E00C6E565 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE246E74138A495E00C6E565 /* Sender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE246E90138A495E00C6E565 /* Build configuration list for PBXNativeTarget "Sender" */;
+			buildPhases = (
+				FE246E71138A495E00C6E565 /* Sources */,
+				FE246E72138A495E00C6E565 /* Frameworks */,
+				FE246E73138A495E00C6E565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sender;
+			productName = Sender;
+			productReference = FE246E75138A495E00C6E565 /* Sender.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE246E6C138A495E00C6E565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "And a Dinosaur";
+			};
+			buildConfigurationList = FE246E6F138A495E00C6E565 /* Build configuration list for PBXProject "Sender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE246E6A138A495E00C6E565;
+			productRefGroup = FE246E76138A495E00C6E565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE246E74138A495E00C6E565 /* Sender */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE246E73138A495E00C6E565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE246E84138A495E00C6E565 /* InfoPlist.strings in Resources */,
+				FE246E8D138A495E00C6E565 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE246E71138A495E00C6E565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE246E87138A495E00C6E565 /* main.m in Sources */,
+				FE246E8A138A495E00C6E565 /* SenderAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE246E82138A495E00C6E565 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE246E83138A495E00C6E565 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE246E8B138A495E00C6E565 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE246E8C138A495E00C6E565 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE246E8E138A495E00C6E565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE246E8F138A495E00C6E565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FE246E91138A495E00C6E565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sender/Sender-Prefix.pch";
+				INFOPLIST_FILE = "Sender/Sender-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE246E92138A495E00C6E565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sender/Sender-Prefix.pch";
+				INFOPLIST_FILE = "Sender/Sender-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE246E6F138A495E00C6E565 /* Build configuration list for PBXProject "Sender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE246E8E138A495E00C6E565 /* Debug */,
+				FE246E8F138A495E00C6E565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE246E90138A495E00C6E565 /* Build configuration list for PBXNativeTarget "Sender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE246E91138A495E00C6E565 /* Debug */,
+				FE246E92138A495E00C6E565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE246E6C138A495E00C6E565 /* Project object */;
+}
