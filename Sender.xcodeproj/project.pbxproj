@@ -15,7 +15,9 @@
 		FE246E8A138A495E00C6E565 /* SenderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E89138A495E00C6E565 /* SenderAppDelegate.m */; };
 		FE246E8D138A495E00C6E565 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE246E8B138A495E00C6E565 /* MainWindow.xib */; };
 		FE246E95138A497700C6E565 /* SMTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E94138A497700C6E565 /* SMTPResponse.m */; };
+		FE25DDF9138A8D560077A4F7 /* NSStream+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE25DDF8138A8D560077A4F7 /* NSStream+Additions.m */; };
 		FE4CB6C7138A4CDE0012ACD2 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4CB6C6138A4CDE0012ACD2 /* NSString+Additions.m */; };
+		FEC05346138A50DF0091DFEE /* SMTPee.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC05345138A50DF0091DFEE /* SMTPee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +34,12 @@
 		FE246E8C138A495E00C6E565 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		FE246E93138A497700C6E565 /* SMTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPResponse.h; sourceTree = "<group>"; };
 		FE246E94138A497700C6E565 /* SMTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPResponse.m; sourceTree = "<group>"; };
+		FE25DDF7138A8D560077A4F7 /* NSStream+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+Additions.h"; sourceTree = "<group>"; };
+		FE25DDF8138A8D560077A4F7 /* NSStream+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+Additions.m"; sourceTree = "<group>"; };
 		FE4CB6C5138A4CDE0012ACD2 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		FE4CB6C6138A4CDE0012ACD2 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		FEC05344138A50DF0091DFEE /* SMTPee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPee.h; sourceTree = "<group>"; };
+		FEC05345138A50DF0091DFEE /* SMTPee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 				FE246E88138A495E00C6E565 /* SenderAppDelegate.h */,
 				FE246E89138A495E00C6E565 /* SenderAppDelegate.m */,
 				FE246E8B138A495E00C6E565 /* MainWindow.xib */,
+				FEC05344138A50DF0091DFEE /* SMTPee.h */,
+				FEC05345138A50DF0091DFEE /* SMTPee.m */,
 				FE246E93138A497700C6E565 /* SMTPResponse.h */,
 				FE246E94138A497700C6E565 /* SMTPResponse.m */,
 				FE4CB6C9138A4CE60012ACD2 /* Additions */,
@@ -107,6 +115,8 @@
 			children = (
 				FE4CB6C5138A4CDE0012ACD2 /* NSString+Additions.h */,
 				FE4CB6C6138A4CDE0012ACD2 /* NSString+Additions.m */,
+				FE25DDF7138A8D560077A4F7 /* NSStream+Additions.h */,
+				FE25DDF8138A8D560077A4F7 /* NSStream+Additions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -177,6 +187,8 @@
 				FE246E8A138A495E00C6E565 /* SenderAppDelegate.m in Sources */,
 				FE246E95138A497700C6E565 /* SMTPResponse.m in Sources */,
 				FE4CB6C7138A4CDE0012ACD2 /* NSString+Additions.m in Sources */,
+				FEC05346138A50DF0091DFEE /* SMTPee.m in Sources */,
+				FE25DDF9138A8D560077A4F7 /* NSStream+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

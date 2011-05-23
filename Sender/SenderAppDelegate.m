@@ -7,6 +7,7 @@
 //
 
 #import "SenderAppDelegate.h"
+#import "SMTPee.h"
 
 @implementation SenderAppDelegate
 
@@ -15,7 +16,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSArray *messages = [NSArray arrayWithObjects:
+                         @"From: <from@gmail.com>",
+                         @"To: <to@gmail.com>",
+                         @"Subject: O HAI",
+                         @"",
+                         @"I CAN HAZ SMTP?\nKTHXBAI!",
+                         @".",
+                         nil];
+    SMTPee *smtp = [[SMTPee alloc] initWithAddress:@"smtp.gmail.com" port:465];
+    [smtp enableTLS];
+    [smtp startWithUser:@"from@gmail.com" secret:@"password" authType:@"login"];
+    [smtp sendMessage:[messages componentsJoinedByString:@"\r\n"] from:@"from@gmail.com" to:[NSArray arrayWithObjects:@"to@gmail.com", nil]];
+    [smtp finish];
+
     [self.window makeKeyAndVisible];
     return YES;
 }
